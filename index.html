@@ -1,91 +1,99 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew H. Contact Me Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
-      <div>
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" >
-    </div>
-    <div>
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email" >
-    </div>
-    <div>
-      <label for="age">Age</label>
-      <input type="number" name="age" id="age" min="1" max="200" step="5">
-    </div>
-    <div>
-      <label for="date">Birthdate</label>
-      <input type="date" name="date" id="date" min="2019-06-10">
-    </div>
-    <div>
-      Favorite Food
-      <div>
-        <label for="banana">Banana</label>
-        <input type="checkbox" name="banana" id="banana">
-      </div>
-      <div>
-        <label for="apple">Apple</label>
-        <input type="checkbox" name="apple" id="apple">
-      </div>
-    </div>
-    <div>
-      Gender
-      <div>
-        <label for="male">Male</label>
-        <input type="radio" name="gender" id="male" value="male">
-      </div>
-      <div>
-        <label for="female">Female</label>
-        <input type="radio" name="gender" id="female" value="female">
-      </div>
-      <div>
-        <label for="other">Other</label>
-        <input type="radio" name="gender" id="other" value="other">
-      </div>
-    </div>
-    <div>
-      <label for="eyeColor">Eye Color</label>
-      <select name="eyeColor" id="eyeColor" multiple>
-        <option value="Green">Green</option>
-        <option label="Red" value="Red"></option>
-      </select>
-    </div>
-    <div>
-      <label for="bio">Bio</label>
-      <textarea id="bio" name="bio"></textarea>
-    </div>
-    <input type="hidden" name="hidden" value="hi">
-    <div>
-      <label for="file">File</label>
-      <input id="file" type="file" name="file">
-    </div>
-    <div>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone">
-    </div>
-    <div>
-      <label for="url">URL</label>
-      <input type="url" name="url" id="url">
-    </div>
-    <div>
-      <label for="color">Color</label>
-      <input type="color" name="color" id="color">
-    </div>
-    <div>
-      <label>
-        Password
-        <input type="password" name="password" >
-      </label>
-    </div>
-    <button type="reset">Reset</button>
-    <button type="submit">Submit</button>
-  </form>
-  <!-- <script src="scripts.js"></script> -->
+    <main>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <!-- Main Nav Bar -->
+            <nav>
+                <ul class="headNav">
+                    <li class="navList">Portfolio</li>
+                    <li class="navList">Resume</li>
+                    <li class="navList">About Me</li>
+                    <li class="navList">Contact Me</li>
+                </ul>
+            </nav>
+            <!-- Main Description -->
+            <div class="headDescription">
+                <h1>Contact Me</h1>
+            </div>
+            <!-- Column Numbering -->
+            <section class="mainContainer">
+                <div class="nameInput mainGrid">
+                    <h2>What's your name?</h2>
+                    <input type="text" name="nameInputField" id="nameInputField" placeholder="John Doe" required>
+                </div>
+                <!-- Email Input -->
+                <div class="emailInput mainGrid">
+                    <h2 class="emailQuestion">What's your email?</h2>
+                    <input class="emailBox" type="email" name="email" id="email" placeholder="john@doe.com" required>
+                </div>
+                <!-- Message Box -->
+                <div class="messageInput mainGrid">
+                    <h2>Your message</h2>
+                    <textarea name="messageBox" id="messageBox" rows="4" cols="50" placeholder="Hello Andrew, can you help me with..." maxlength="500" minlength="20" required></textarea>
+                </div>
+                <!-- Contact Back - Y/N -->
+                <div class="contactBackInput mainGrid">
+                    <h2>Do you wish to be contacted back?</h2>
+                    <div>
+                        <input type="radio" name="radioContactBack" id="radioContactBack1" required>
+                        <label for="radioContactBack1">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radioContactBack" id="radioContactBack2" required>
+                        <label for="radioContactBack2">No</label>
+                    </div>
+                </div>
+                <!-- Referral Input -->
+                <div class="referralInput mainGrid">
+                    <h2>How did you hear about me?</h2>
+                    <div>
+                        <input type="radio" name="radioOptions" id="radioOption1" required>
+                        <label for="radioOption1">Classmate</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radioOptions" id="radioOption2" required>
+                        <label for="radioOption2">Resume Submission</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radioOptions" id="radioOption3" required>
+                        <label for="radioOption3">LinkedIn</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radioOptions" id="radioOption4" required>
+                        <label for="radioOption4">Coding Academy Rec</label>
+                    </div>
+                </div>
+                <!-- Birthday Input -->
+                <div class="birthdayWishInput">
+                    <h3>Enter your Birthday for a special birthday wish</h3>
+                    <input type="date" name="birthdayWish" id="birthdayWish">
+                </div>
+                <!-- Contact Details -->
+                <div class="contactDetails">
+                    <h3>Contact Details</h3>
+                    <p>info@andrewhemry.com</p>
+                    <p>515-123-8675</p>
+                </div>
+                <!-- Business Details -->
+                <div class="businessDetails">
+                    <h3>Business Details</h3>
+                    <p>Location: United States</p>
+                    <p>Hours: Mon-Fri, 9-6 CST</p>
+                </div>
+                <div class="buttons mainGrid">
+                    <button class="resetBtn finalBtn" type="reset">Reset</button>
+                    <button class="submitBtn finalBtn" type="submit">Submit</button>
+                </div>
+            </section>
+        </form>
+        <script src="scripts.js"></script>
+    </main>
 </body>
 </html>

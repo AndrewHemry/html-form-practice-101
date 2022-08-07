@@ -1,0 +1,139 @@
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0; 
+}
+
+main {
+    background-color: #100F0F;
+    color: #F1F1F1;
+}
+
+nav{
+    display: block;
+    border-bottom: 1px solid grey;
+}
+
+/* Navigation Bar */
+.headNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    background-color: #0F3D3E;
+}
+
+/* Contact Me Verbiage */
+.headDescription {
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* Parent Container */
+.mainContainer {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1.50fr 0.5fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+/* Content Inside Grid */
+.mainGrid {
+    padding: 10px;
+}
+
+/* Submit & Reset Button */
+.finalBtn {
+    width: 65px;
+    height: 25px;
+}
+
+.nameInput {
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+.emailInput {
+    grid-column: 1;
+    grid-row: 2 / 3;
+}
+
+.messageInput {
+    grid-column: 1;
+    grid-row: 3 / 4;
+}
+
+.contactBackInput {
+    grid-column: 1;
+    grid-row: 4 / 5;
+}
+
+.referralInput {
+    grid-column: 1;
+    grid-row: 5 / 6;
+}
+
+.contactDetails {
+    grid-column: 2;
+    grid-row: 1 / 2;
+}
+
+.businessDetails {
+    grid-column: 2;
+    grid-row: 2 / 3;
+}
+
+.birthdayWishInput {
+    grid-column: 2;
+    grid-row: 3 / 4;
+}
+
+.resetBtn {
+    margin: 10px;
+}
+
+.submitBtn {
+    margin: 10px;
+}
+
+.buttons {
+    display: flex;
+    grid-column: 1;
+    grid-row: 6 / 7;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .mainContainer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 150px;
+        margin-left: 150px;
+    }
+
+    .birthdayWishInput {
+        margin-top: 50px;
+        padding-left: 10px;
+    }
+
+    .contactDetails {
+        margin-top: 40px;
+        padding-left: 10px;
+    }
+
+    .businessDetails {
+        margin-top: 15px;
+        padding-left: 10px;
+    }
+
+    #messageBox {
+        width: 90%;
+    }
+}
+
